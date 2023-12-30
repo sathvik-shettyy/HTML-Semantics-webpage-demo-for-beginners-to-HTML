@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Semantics Demo</title>
+    <style>
+      body {
+        font-family:Arial, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      header, nav, article, section, aside, footer {
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        padding: 10px;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <h1>Main Header</h1>
+      <p>This is the main header</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#section1">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+      </ul>
+    </nav>
+
+    <article id="Section1">
+      <h2>Section 1</h2>
+      <p>This is the first section of the content.It contains paragraph, a list and a image</p>
+      <ul>
+        <li> List items 1</li>
+        <li> List item 2</li>
+        <li> List item 3</li>
+      </ul>
+      <img src="https://placekitten.com/400/200" alt="A cute kitten">
+    </article>
+
+    <article id="section2">
+      <h2>Section 2</h2>
+      <p>This is the second section of the content.</p>
+      <p>It also contains a subsection with a nested list.</p>
+      <section>
+        <h3>Subsection</h3>
+        <ul>
+          <li>Nested item 1</li>
+          <li>Nested item 2</li>
+          <li>Nested item 3</li>
+        </ul>
+      </section>
+    </article>
+
+    <article id="section3">
+      <h2>Section 3</h2>
+      <p>This is the third section of the content.</p>
+      <p>It includes a quote.</p>
+
+      <blockquote>
+        <p>"The only way to do great work is to love what you do"-Stevejobs</p>
+      </article>
+
+      <aside>
+        <h2>Aside section </h2>
+        <p>This is an aside section with additional content or related information.</p>
+      </aside>
+
+      <footer>
+        <p>This is a footer section. &copy; 2023 Semantics Demo</p>
+      </footer>
+
+  </body>
+</html>
